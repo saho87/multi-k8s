@@ -10,4 +10,4 @@ FROM nginx
 EXPOSE 3000
 COPY ./ngnix/default.conf /etc/nginx/conf.d/default.conf
 # kopiert alle Dateien im build Ordner in nginx
-COPY --from=builder /app/build /usr/share/ngnix/html
+COPY --from=builder /app/build /usr/share/nginx/html
