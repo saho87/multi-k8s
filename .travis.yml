@@ -16,10 +16,10 @@ after_success:
   - docker build -t saho87/multi-worker ./worker
 
   # Log into the docker CLI
-  - echo "$Docker_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
   #Take those images an push them to docker hub
   - docker push saho87/multi-client
   - docker push saho87/multi-ngnix
   - docker push saho87/multi-server
-  - docker pushsaho87/multi-worker
+  - docker push saho87/multi-worker
