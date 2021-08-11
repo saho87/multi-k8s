@@ -20,7 +20,7 @@ after_success:
 
   #Take those images an push them to docker hub
   - docker push saho87/multi-client
-  - docker push saho87/multi-ngnix
+  - docker push saho87/multi-nginx
   - docker push saho87/multi-server
   - docker push saho87/multi-worker
 
