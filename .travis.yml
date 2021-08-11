@@ -2,7 +2,7 @@ sudo: required
 language: generic
 services:
   - docker
-
+ 
 before_install:
   - docker build -t saho87/react-test -f ./client/Dockerfile.dev ./client
 
