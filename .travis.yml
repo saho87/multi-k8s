@@ -11,7 +11,7 @@ script:
 
 after_success:
   - docker build -t saho87/multi-client ./client
-  - docker build -t saho87/multi-ngnix ./nginx
+  - docker build -t saho87/multi-nginx ./nginx
   - docker build -t saho87/multi-server ./server
   - docker build -t saho87/multi-worker ./worker
 
